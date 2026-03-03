@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chatlayer Widget Load Test</title>
+  </head>
+  <body>
+    <h1>Widget Load Test</h1>
+    <script type="application/javascript">
+      (function(c,p,_,h){const o=[],r=[];let s,f,i;c[_]={init(...e){s=e;var t={then:n=>(r.push({t:"t",next:n}),t),catch:n=>(r.push({t:"c",next:n}),t)};return t},on(e,t){o.push([e,t])},render(...e){f=e},destroy(...e){i=e}};const g=p.getElementsByTagName("script")[0],l=p.createElement("script");l.async=!1,l.src=h,g.parentNode.insertBefore(l,g),c.__onWebMessengerHostReady__=function(e){if(delete c.__onWebMessengerHostReady__,window[_]=e,s){const t=e.init.apply(e,s);for(let n=0;n<r.length;n++){const a=r[n];a.t==="t"?t.then(a.next):t.catch(a.next)}}i&&e.destroy.call(e,i),f&&e.render.apply(e,f);for(let t=0;t<o.length;t++)e.on.apply(e,o[t])}})(window,document,"Chatlayer","https://storage.googleapis.com/static.dev.europe-west1.gcp.chatlayer.ai/widget/sdk.js");
+    </script>
+    <script type="application/javascript">
+      Chatlayer.init({"channelId": "DEV-mlgl2ckb:699ef57eaaf98dfea5f85528", "region": "dev", "position": "right"})
+    </script>
+  </body>
+</html>
